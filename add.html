@@ -28,19 +28,49 @@
         <a href="contact.html"><h2>Contact Us</h2></a>
       </div>
     </nav>
-    <div class="add-course-container">
-      <h2 class="add-title">Add the course you want</h2>
+    <div class="form-card">
+      <h2 class="form-title">Register New Course</h2>
+      <form id="addCourseForm">
+        <div class="form-grid">
+          <div class="input-group">
+            <label>Course Name</label>
+            <input
+              type="text"
+              placeholder="e.g. Advanced JavaScript"
+              required
+            />
+          </div>
 
-      <div class="search-group">
-        <input
-          type="text"
-          placeholder="Course name or link..."
-          class="search-input"
-        />
-        <button class="add-btn">Add Course</button>
-      </div>
+          <div class="input-group">
+            <label>Platform</label>
+            <input type="text" placeholder="e.g. Coursera, YouTube" required />
+          </div>
+
+          <div class="input-group">
+            <label>Start Date</label>
+            <input type="date" required />
+          </div>
+
+          <div class="input-group">
+            <label>Current Status</label>
+            <select required>
+              <option value="pending">Planned</option>
+              <option value="progress">In Progress</option>
+              <option value="completed">Completed</option>
+            </select>
+          </div>
+
+          <div class="input-group full-width">
+            <label>Course URL / Link</label>
+            <input type="url" placeholder="https://..." required />
+          </div>
+        </div>
+
+        <button type="submit" class="submit-btn">
+          Save Course to Organizer
+        </button>
+      </form>
     </div>
-
     <footer>helwan universty projects© Abdullah Ayman20250591</footer>
   </body>
 </html>
